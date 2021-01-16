@@ -1,0 +1,249 @@
+/*global*/
+*{
+	position: relative;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Helvetica', 'Noto Sans TC', sans-serif;
+	font-size: 20px;
+	color: #293A64;
+	line-height: 32px;
+}
+h1{
+	font-size: 32px;
+	color: #768AA4;
+	text-align: center;
+}
+h2{
+	font-size: 24px;
+	text-align: center;
+}
+/*grid*/
+.container{
+	margin: 0 auto;
+	height: 100%;
+	width: 70%;
+}
+.row:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.col-1-2, .col-1-3, .col-2-3{
+	float: left;
+}
+.col-1-2{
+	width: 50%;
+}
+.col-1-3{
+	width: 33.33333%;
+}
+.col-2-3{
+	width: 66.66666%;
+}
+.elements{
+	padding: 15px;
+}
+.givePadding{
+	padding-top: 80px;
+	padding-bottom: 104px;
+}
+.icon{
+	width: 90px;
+	height: 90px;
+	background-size: cover;
+	position: absolute;
+	top:  0;
+	left: 0;
+}
+/*Background*/
+.Background .main-color{
+	width: 100%;
+	height: 100%;
+	background-color: #F0F0F0;
+	position: fixed;
+}
+.Background .bg-frameGroup{
+	width: 100%;
+	height: 4500px;
+	position: absolute;
+	top: 750px;
+	background-position: center;
+	background-size: cover;
+}
+.Background .bg-frameGroup .frameLeft-1{
+	width: 171px;
+	height: 1565px;
+	position: absolute;
+	top: 400px;
+	left: 0;
+}
+.Background .bg-frameGroup .frameLeft-2{
+	width: 166px;
+	height: 884px;
+	position: absolute;
+	bottom: 540px;
+	left: 0;
+}
+.Background .bg-frameGroup .frameRight-1{
+	width: 86px;
+	height: 816px;
+	position: absolute;
+	top: 24px;
+	right: 0;
+}
+.Background .bg-frameGroup .frameRight-2{
+	width: 125px;
+	height: 1065px;
+	position: absolute;
+	top: 1800px;
+	right: 0;
+}
+.Background .frameBottom{
+	width: 100%;
+	height: 30%;
+	background-size: cover;
+	position: absolute;
+	bottom: 0;
+}
+/*Banner*/
+.banner-bg{
+	width: 100%;
+	height: 700px;
+	background-position: center;
+	background-size: cover;
+}
+.Banner  .banner-title{
+	position: absolute;
+	top: 5%;
+	left: 5%;
+	color: #fff;
+	line-height: 64px;
+	font-size: 40px;
+	text-align: left;
+}
+.Banner .banner-img{
+	width: 745px;
+	height: 600px;
+	background-position: center;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	right: 2%;
+	opacity: 0;
+	animation: banner-imgIn 1s 0.5s both;
+}
+@keyframes banner-imgIn{
+	from{
+		opacity: 0;
+		top: 0;
+	}
+	to{
+		opacity: 1;
+		top: 10%;
+	}
+}
+/*About*/
+.About{
+	padding-top: 120px;
+}
+.About .aboutImg-group{
+	padding-top: 72px;
+}
+.About .aboutImg {
+	margin: 0 auto;
+}
+.About p{
+	text-align: justify;
+	text-justify:inter-ideograph;
+}
+/*Why*/
+.Why h1{
+	text-align: left;
+}
+.Why p{
+	text-align: justify;
+	text-justify:inter-ideograph;
+}
+.Why .whyImg{
+	background-size: cover;
+	width: 341px;
+	height: 277px;
+}
+.Why .col-1-3{
+	padding-top: 24px;
+}
+/*Effort*/
+.Effort .effort-list{
+	height: 330px;
+	margin-right: 15px;
+	margin-left: 15px;
+	background-color: #CC717A;
+	color: #fff;
+	border-radius: 32px;
+}
+.Effort .row{
+	padding-top: 40px;
+}
+.Effort .icon{
+	position: absolute;
+	top: -40px;
+	right: 0;
+}
+/*Imagine*/
+.Imagine h1{
+	text-align: left;
+}
+.Imagine p{
+	text-align: justify;
+}
+.Imagine .imagineImg{
+	margin: 0 auto;
+	background-size: cover;
+	width: 300px;
+	height: 230px;
+}
+/*Schedule*/
+.Schedule{
+	text-align: center;
+}
+.Schedule .row{
+	margin-right: 15px;
+	margin-left: 15px;
+	margin-top: 24px;
+}
+.Schedule .row .col-2-3{
+	background-color: #B8C3CD;
+	border: 1px solid #fff;
+	border-radius: 15px;
+}
+.Schedule .row .col-1-3{
+	background-color: #75A5CC;
+	border: 1px solid #fff;
+	border-radius: 15px;
+}
+.Schedule .icon{
+	position: absolute;
+	top: -40px;
+	left: 0;
+}
+/*Problem*/
+.Problem .solution-group{
+	padding-top: 24px;
+	padding-left: 32px;
+}
+.Problem .solution{
+	background-color: #497C63;
+	padding: 8px;
+	padding-left: 80px;
+	border-radius: 32px;
+	color: #fff;
+	margin-bottom: 40px;
+}
+.Problem .icon{
+	position: absolute;
+	top: -16px;
+	left: -24px;
+}
